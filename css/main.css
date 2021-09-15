@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-size: 14px;
+    background-color: #F5F5F5;
+   
+    font-family: var(--bs-font-sans-serif);
+}
+.header{
+    background-image: url(../images/intro-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    
+}
+.header .header-layer{
+    top: 0;
+    left: 0;
+
+}
+.header .header-layer .header-layer-bg{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.header .header-layer .caption h1{
+    font-size: calc(1.525rem + 3.3vw) ;    
+
+}
+.header .header-layer .caption p{
+    font-size: 2.5rem;
+}
+nav{
+    background-color: #040404;
+  
+}
+nav ul li a{
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    color: #fff;
+   
+}
+nav ul li a::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    right:100% ;
+    width: 150px;
+    height: 3px;
+    transition: 0.2s;
+
+}
+nav ul li a:active{
+    color: #fff;
+  
+    
+}
+nav ul li a:hover:before{
+    right:20% ;
+}
+
+.about .about-card {
+    box-shadow:0 0 3px rgb(172, 167, 167);
+}
+.about .about-card .left .left-skils .left-skils-way{
+    background-color:#CDE1F8;
+    height: 10px;
+
+}
+.about .about-card .left .left-cont{
+    font-size: 14px;
+}
+.about .about-card .right h2{
+    position: relative;
+}
+.about .about-card .right h2::after{
+    content:"";
+    background-color: #0078FF;
+    width: 110px;
+    height: 4px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    
+}
+.about .about-card .right .right-brife{
+    font-size: 18px;
+}
+.title h2{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.title p{
+    font-size: 1rem;
+    
+
+}
+.w-85{
+    width: 85%;
+}
+.w-90{
+    width: 90%;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    top:120px;
+    right: 50%;
+    width: 100px;
+    height: 5px;
+    background-color: #0078FF;
+    transform: translateX(50%);
+
+}
+.service .service-box {
+    border-radius: 20px;
+
+}
+.service .service-box p{
+    font-size: 17px;
+    
+}
+.service .service-box .icon{
+    font-size: 100px;
+    border: 10px solid #0078FF;
+    transition: .4s;
+    
+}
+.service .service-box:hover .icon{
+    background-color: #0078ff;
+    border-color: #CDE1F8;
+    color: #fff;
+}
+.service .service-anlysis{
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    position: relative;
+    height: auto;
+    z-index: 0;
+}
+.service .service-anlysis .reviwe{
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.service .service-anlysis .block .icon{
+    font-size: 100px;
+    border: 10px solid #CDE1F8;
+    transition: .4s;
+}
+.Portfolio .Portfolio-box .box-prof a{
+    border: 2px solid #0078FF;
+}
+.Portfolio .Portfolio-box img{
+    transition: 0.5s;
+
+}
+.Portfolio .Portfolio-box:hover  img {
+   transform: scale(120%);
+}
+.Portfolio-anlysis{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    height: 80%;
+    z-index: 0;
+}
+.Portfolio-anlysis .reviwe{
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 60%;
+}
+.Portfolio-anlysis .carl .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.blog .blog-cont .member .img-member::after{
+    content: "Travel";
+    position: absolute;
+    width: 80px;
+    padding: 3px;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+   border-radius: 5px;
+    background-color: #0078ff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , 50%);
+}
+.blog .blog-cont .member .img-member_2::after{
+    content: "Web Design";
+    position: absolute;
+    padding: 3px 5px 0;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+   border-radius: 5px;
+    background-color: #0078ff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , 50%);
+}
+.blog .blog-cont .member .img-member_3::after{
+    content: "Web Design";
+    position: absolute;
+    padding: 3px 5px 0;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+   border-radius: 5px;
+    background-color: #0078ff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , 50%);
+}
+.blog .blog-cont .member{
+    box-shadow: 0 0  5px #838383;
+}
+.blog .blog-cont .member .member-med h4 a{
+    color: #040404;
+    
+}
+.blog .blog-cont .member .member-med h4 a:hover{
+    color: #0078ff;
+    
+}
+.blog .blog-cont .member .sub-member{
+border: 2px solid #F5F5F5;
+  background-color: #F7F7F7;
+}
+.blog .blog-cont .member .sub-member  img{
+ width:40px;
+  
+}
+.Message .Message-ts h2{
+    position: relative;
+}
+.Message .Message-ts h2::after{
+    content: "";
+    width: 120px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0078FF;
+}
+.Message .Message-ts .hov p{
+    margin: 0 5px;
+    padding: 3px 8px 11px 8px;
+    font-size: 20px;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+}
+.Message .Message-ts .hov p:hover{
+    background-color: #0078FF;
+    color: #fff;
+}
+.Message .bg-coloe{
+    background-color:#0062D3;
+    height: 150px;
+    border-top: 2px solid #1f69be;
+    
+}
+
+
+
+
